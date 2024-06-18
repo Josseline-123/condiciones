@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <h1>Seleccion de stickers</h1>
+    <img id="imagen2" src="./assets/img/sticker1.jpg" width="130">
+    <label></label> <input type="number" name="" id="valor1" step="0.001" oninput="calcular()"><br><br>
+    <img id="imagen2" src="./assets/img/sticker2.jpg" width="130">
+    <label></label> <input type="number" name="" id="valor2" step="0.001" oninput="calcular()"><br><br> 
+    <img id="imagen2" src="./assets/img/sticker3.jpg" width="130">
+    <label></label> <input type="number" name="" id="valor3" step="0.001" oninput="calcular()"><br><br> 
+
+     <input type="number" name="" id="totales" step="0.001" ><button id="enviarValor" onclick="
+     
+     if(Number(totales.value) > 10){
+        const parrafoRespuesta = document.querySelector('#respuesta1')
+        .innerHTML= 'Llevas demasiados stickers';
+ 
+         }
+
+         if(Number(totales.value) <= 10){
+        const parrafoRespuesta = document.querySelector('#respuesta1')
+     .innerHTML=  ' llevas ' + document.querySelector('#totales').value  + ' stickers ';
+ 
+}      
+
+        
+     
+         "> validador</button> 
+     <p id="respuesta1"></p>
+     
+    
+
+
+    </body>
+
+    <script src="./assets/js/js.script1.js"></script>
+    </html>
